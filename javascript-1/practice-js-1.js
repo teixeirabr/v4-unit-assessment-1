@@ -5,6 +5,8 @@
 
 let myName = "Andre";
 
+console.log(myName);
+
 //////////////////PROBLEM 2////////////////////
 /* Create a variable called 'faveNum' with a value that is your favorite number. */
 
@@ -47,8 +49,6 @@ trueOrFalse = (data) => {
   }
 };
 
-console.log(trueOrFalse);
-
 //////////////////PROBLEM 6////////////////////
 /*
   Create a function called 'oddChecker' that takes in one parameter, 'num'. 
@@ -85,12 +85,20 @@ iLove = (name, love) => {
 
 const faveColors = ["red", "green", "black"];
 
+let colorCopy = faveColors.slice(0);
+
+//console.log(colorCopy);//
+
 //CODE HERE
 
 //////////////////PROBLEM 9////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
 //CODE HERE
+
+colorCopy.push("white");
+
+console.log(colorCopy);
 
 //////////////////PROBLEM 10////////////////////
 /*
@@ -99,6 +107,10 @@ const faveColors = ["red", "green", "black"];
 */
 
 const numbers = [1, 2, 3, 4, 5];
+
+let middleNums = numbers.slice(1, 4);
+
+console.log(middleNums);
 
 //CODE HERE
 
@@ -118,6 +130,15 @@ const numbers = [1, 2, 3, 4, 5];
 
 //CODE HERE
 
+let me = {
+  firstName: "a",
+  state: "fl",
+  age: 7,
+  greeter: () => {
+    `Hello! My name is ${firstName} and I live in ${state}`;
+  },
+};
+
 //////////////////PROBLEM 12////////////////////
 /* 
   Create a function called 'bigOrSmall' that takes in one parameter, 'arr', 
@@ -132,6 +153,18 @@ const numbers = [1, 2, 3, 4, 5];
 */
 
 // CODE HERE
+
+bigOrSmall = (arr) => {
+  let answers = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+      answers.push("big");
+    } else {
+      answers.push("small");
+    }
+  }
+  return answers;
+};
 
 //////////////////PROBLEM 13////////////////////
 /* 
