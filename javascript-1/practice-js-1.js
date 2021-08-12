@@ -1,10 +1,14 @@
 //////////////////PROBLEM 1////////////////////
 /* Create a variable called 'myName' with a value that is your name as a string. */
 
-//CODE HERE 
+//CODE HERE
+
+let myName = "Andre";
 
 //////////////////PROBLEM 2////////////////////
 /* Create a variable called 'faveNum' with a value that is your favorite number. */
+
+let faveNum = 7;
 
 //CODE HERE
 
@@ -13,6 +17,8 @@
 
 //CODE HERE
 
+let lovesCode = true;
+
 //////////////////PROBLEM 4////////////////////
 /*
   Create a function called 'sum' that takes in two parameters, 'num1' and 'num2'. 
@@ -20,6 +26,8 @@
 */
 
 //CODE HERE
+
+sum = (num1, num2) => num1 + num2;
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -31,6 +39,16 @@
 
 //CODE HERE
 
+trueOrFalse = (data) => {
+  if (data) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+console.log(trueOrFalse);
+
 //////////////////PROBLEM 6////////////////////
 /*
   Create a function called 'oddChecker' that takes in one parameter, 'num'. 
@@ -41,6 +59,14 @@
 
 //CODE HERE
 
+oddChecker = (num) => {
+  if (num % 2 == 0) {
+    return "the number is even";
+  } else {
+    return "the number is odd";
+  }
+};
+
 //////////////////PROBLEM 7////////////////////
 /*
   Create a function called 'iLove' that takes in two string parameters, 'name' and 'love'. 
@@ -50,11 +76,10 @@
 
 //CODE HERE
 
-
 //////////////////PROBLEM 8////////////////////
 /* Create a copy of the faveColors array called 'colorCopy' using the slice method. */
 
-const faveColors = ['red', 'green', 'black']
+const faveColors = ["red", "green", "black"];
 
 //CODE HERE
 
@@ -69,7 +94,7 @@ const faveColors = ['red', 'green', 'black']
   numbers array that will capture only the middle numbers (2, 3, 4).
 */
 
-const numbers = [1, 2, 3, 4, 5]
+const numbers = [1, 2, 3, 4, 5];
 
 //CODE HERE
 
@@ -118,17 +143,17 @@ const numbers = [1, 2, 3, 4, 5]
 
 //////////////////PROBLEM 14////////////////////
 
-let global = 'cool string'
+let global = "cool string";
 
 function firstFunction() {
-  let outer = 'awesome string'
+  let outer = "awesome string";
   function innerFunction() {
-    let inner = 'fun string'
+    let inner = "fun string";
   }
 }
 
 function secondFunction() {
-  let functional = 'lonely string'
+  let functional = "lonely string";
 }
 
 /*
@@ -140,17 +165,16 @@ function secondFunction() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['global', 'inner', 'outer', 'functional']
+let globalScope = ["global", "inner", "outer", "functional"];
 
 //This array should contain the variable names (as strings) accessible in the firstFunction function.
-let firstFunctionScope = ['global', 'inner', 'outer', 'functional']
+let firstFunctionScope = ["global", "inner", "outer", "functional"];
 
 //This array should contain the variable names (as strings) accessible in the innerFunction function.
-let innerFunctionScope = ['global', 'inner', 'outer', 'functional']
+let innerFunctionScope = ["global", "inner", "outer", "functional"];
 
 //This array should contain the variable names (as strings) accessible in the secondFunction function.
-let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
-
+let secondFunctionScope = ["global", "inner", "outer", "functional"];
 
 //////////////////PROBLEM 15////////////////////
 /* 
