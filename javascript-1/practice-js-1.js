@@ -229,6 +229,10 @@ let secondFunctionScope = ["global", "inner", "outer", "functional"];
 
 //CODE HERE
 
+firstItem = (array, callback) => {
+  callback(array[0]);
+};
+
 //////////////////PROBLEM 16////////////////////
 /* 
   Write a function called isItBob that takes in two arguments: an object and a callback function. 
