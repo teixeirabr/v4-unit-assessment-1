@@ -243,6 +243,12 @@ firstItem = (array, callback) => {
 
 //CODE HERE
 
+isItBob = (obj, callback) => {
+  if (obj === "Bob") {
+    callback(true);
+  } else callback(false);
+};
+
 //////////////////PROBLEM 17////////////////////
 /*
   Write a function called giveMeDoubles that takes in two arguments: an array of numbers and a callback.  
@@ -251,6 +257,20 @@ firstItem = (array, callback) => {
 */
 
 //CODE HERE
+
+doubled = (arr) => {
+  let doubled = [];
+  for (let i = 0; i < arr.length; i++) {
+    doubled.push(arr[i] * 2);
+  }
+  return doubled;
+};
+
+giveMeDoubles = (arr, cb) => {
+  return cb(arr);
+};
+
+giveMeDoubles([1, 2, 3], doubled);
 
 //////////////////PROBLEM 18////////////////////
 /*
