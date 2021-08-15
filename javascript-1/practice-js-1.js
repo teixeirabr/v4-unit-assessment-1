@@ -298,3 +298,12 @@ giveMeDoubles([1, 2, 3], doubled);
 */
 
 //CODE HERE
+function carFactory(make, model, year) {
+  let car = { make, model, year };
+  if (car.year > 2018) {
+    car.isNew = true;
+  } else {
+    car.isNew = false;
+  }
+  return car;
+}
