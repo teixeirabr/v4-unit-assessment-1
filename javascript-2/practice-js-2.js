@@ -11,6 +11,8 @@
 
 //CODE HERE
 
+let gitDefinition = "Git is the most commonly used version control system";
+
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,6 +20,8 @@
 */
 
 //CODE HERE
+
+let gitHubDefinition = "GitHub is a Git repository hosting service";
 
 //////////////////PROBLEMS 3 - 9////////////////////
 /*
@@ -34,6 +38,11 @@
 */
 
 //CODE HERE
+
+let init = {
+  description: "",
+  code: "git init",
+};
 
 //////////////////PROBLEM 4////////////////////
 /*

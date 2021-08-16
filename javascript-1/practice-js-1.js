@@ -87,10 +87,6 @@ const faveColors = ["red", "green", "black"];
 
 let colorCopy = faveColors.slice(0);
 
-//console.log(colorCopy);//
-
-//CODE HERE
-
 //////////////////PROBLEM 9////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
@@ -210,16 +206,16 @@ function secondFunction() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["global", "inner", "outer", "functional"];
+let globalScope = ["global"];
 
 //This array should contain the variable names (as strings) accessible in the firstFunction function.
-let firstFunctionScope = ["global", "inner", "outer", "functional"];
+let firstFunctionScope = ["global", "outer"];
 
 //This array should contain the variable names (as strings) accessible in the innerFunction function.
-let innerFunctionScope = ["global", "inner", "outer", "functional"];
+let innerFunctionScope = ["global", "inner", "outer"];
 
 //This array should contain the variable names (as strings) accessible in the secondFunction function.
-let secondFunctionScope = ["global", "inner", "outer", "functional"];
+let secondFunctionScope = ["global", "functional"];
 
 //////////////////PROBLEM 15////////////////////
 /* 
@@ -243,11 +239,9 @@ firstItem = (array, callback) => {
 
 //CODE HERE
 
-isItBob = (obj, callback) => {
-  if (obj === "Bob") {
-    callback(true);
-  } else callback(false);
-};
+function isItBob(obj, func) {
+  return func(obj.name === "Bob" ? true : false);
+}
 
 //////////////////PROBLEM 17////////////////////
 /*
